@@ -1,5 +1,12 @@
 {
   "resources": [
+    {"id":{"name":"Spr_Enemy","path":"sprites/Spr_Enemy/Spr_Enemy.yy",},"order":1,},
+    {"id":{"name":"Spr_hill_down","path":"sprites/Spr_hill_down/Spr_hill_down.yy",},"order":5,},
+    {"id":{"name":"Spr_Player","path":"sprites/Spr_Player/Spr_Player.yy",},"order":0,},
+    {"id":{"name":"Spr_human","path":"sprites/Spr_human/Spr_human.yy",},"order":2,},
+    {"id":{"name":"Spr_hill_up","path":"sprites/Spr_hill_up/Spr_hill_up.yy",},"order":4,},
+    {"id":{"name":"Spr_hill_flat","path":"sprites/Spr_hill_flat/Spr_hill_flat.yy",},"order":3,},
+    {"id":{"name":"TS_hills","path":"tilesets/TS_hills/TS_hills.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
