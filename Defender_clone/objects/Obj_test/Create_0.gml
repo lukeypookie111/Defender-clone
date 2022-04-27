@@ -1,3 +1,4 @@
+randomize();
 Randomised_numbers =ds_list_create();
 
 ds_list_create();
