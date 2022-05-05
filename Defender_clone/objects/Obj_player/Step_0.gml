@@ -6,30 +6,30 @@
 
 if(keyboard_check(vk_left))
 	{
-		hspeed = -5
+		hspeed = -10
 		image_index =0 
 	}
 
 if keyboard_check(vk_right)
 	{
 	
-		hspeed = 5;
+		hspeed = 10;
 		image_index =1
 	}
 	
 if keyboard_check(vk_up)
 	{
 	
-		vspeed = -2;
+		vspeed = -4;
 	}
 if keyboard_check(vk_down)
 	{
 	
-		vspeed = 2;
+		vspeed = 4;
 	}
 if abs(speed) > 0
 {
-    friction = speed*0.05;
+    friction = speed*0.03;
 }
 else
 {
