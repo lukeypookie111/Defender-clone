@@ -8,7 +8,7 @@ player_y_2 = Obj_player.y-10
 spawn_x = irandom_range(0,room_width)
 spawn_y = irandom_range(0,room_height)
 
-if (global.Num_enemy <= 10)
+if (global.Num_enemy < 3)
 {
 	if can_spawn == true
 	{

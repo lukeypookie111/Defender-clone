@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"Obj_BT_ext","path":"objects/Obj_BT_ext/Obj_BT_ext.yy",},"order":1,},
+    {"id":{"name":"test_scripted","path":"scripts/test_scripted/test_scripted.yy",},"order":3,},
     {"id":{"name":"Spr_Enemy","path":"sprites/Spr_Enemy/Spr_Enemy.yy",},"order":1,},
     {"id":{"name":"Spr_house_4","path":"sprites/Spr_house_4/Spr_house_4.yy",},"order":12,},
     {"id":{"name":"Spr_house_1","path":"sprites/Spr_house_1/Spr_house_1.yy",},"order":9,},
@@ -24,7 +25,9 @@
     {"id":{"name":"Spr_Bt_start","path":"sprites/Spr_Bt_start/Spr_Bt_start.yy",},"order":7,},
     {"id":{"name":"enemy_fire","path":"scripts/enemy_fire/enemy_fire.yy",},"order":2,},
     {"id":{"name":"TS_background","path":"tilesets/TS_background/TS_background.yy",},"order":1,},
+    {"id":{"name":"get_target_house","path":"scripts/get_target_house/get_target_house.yy",},"order":5,},
     {"id":{"name":"Spr_ext","path":"sprites/Spr_ext/Spr_ext.yy",},"order":6,},
+    {"id":{"name":"generate_house_list","path":"scripts/generate_house_list/generate_house_list.yy",},"order":4,},
     {"id":{"name":"rm_Level_1","path":"rooms/rm_Level_1/rm_Level_1.yy",},"order":0,},
   ],
   "Options": [

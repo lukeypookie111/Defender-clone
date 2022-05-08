@@ -2,17 +2,15 @@
 // You can write your code in this editor
 y = room_height-20
 num_cluster = 0
-for (var b = 0; b<room_width +1; b+=1)
+for (var b = 100; b<room_width +1; b+=1)
 {
-	Randomised_numbers[b] =global.Randomised_numbers[b]
-	y += Randomised_numbers[b];
-	if Randomised_numbers[b] == 0
-			{
-				cluster_distance = 50
+
+
+				cluster_distance = 80
 				num_cluster += 1
 				if num_cluster >=3
 				{	
-					cluster_distance =256
+					cluster_distance =200
 					num_cluster = 0	
 				}
 				var house = instance_create_layer(b, y, "Instances", Obj_house);
@@ -24,7 +22,7 @@ for (var b = 0; b<room_width +1; b+=1)
 
 					switch(House_type)
 					{
-						case 0:object_set_sprite(Obj_house,Spr_house_1) break;
+						case 0:object_set_sprite(Obj_house,Spr_house_1)break;
 						case 1:object_set_sprite(Obj_house,Spr_house_2)break;
 						case 2:object_set_sprite(Obj_house,Spr_house_3)break;
 						case 3:object_set_sprite(Obj_house,Spr_house_4)break;
@@ -36,10 +34,9 @@ for (var b = 0; b<room_width +1; b+=1)
 				
 				}
 				b += cluster_distance
-				if b > room_width 
+				if b > room_width
 				{
-					b= room_width
+					b = room_width
 				
 				}
 			}
-}

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-health = 10
+house_health = 3
 
 house_x = x
 house_y = y
