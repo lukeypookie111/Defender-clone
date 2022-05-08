@@ -23,8 +23,8 @@
   "creationCodeFile": "${project_dir}/rooms/Rm_Main_menu/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_18535216","path":"rooms/Rm_Main_menu/Rm_Main_menu.yy",},
     {"name":"inst_7D4B5B42","path":"rooms/Rm_Main_menu/Rm_Main_menu.yy",},
+    {"name":"inst_18535216","path":"rooms/Rm_Main_menu/Rm_Main_menu.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

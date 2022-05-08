@@ -22,10 +22,8 @@ else
 {
     friction = 0;
 }
-
-if mode = 0
-{
-	if !has_target {
+if !has_target 
+	{
 			index = 0
 		for (var i = 0; i < instance_number(Obj_house)-1; ++i;)
 		{
@@ -37,6 +35,9 @@ if mode = 0
 				
 			}
 		}
+	
+
+	
 
 	House_number = irandom(array_length(house)-1)
 	target_house =  house[House_number]
@@ -44,7 +45,7 @@ if mode = 0
 	if instance_exists(target_house) = true
 	{
 		has_target = true
-		while target_house.is_targeted == true and has_target
+		while target_house.is_targeted == true and has_target and instance_exists(target_house)
 			{
 				time_out--
 				House_number = irandom(array_length(house)-1)
@@ -55,25 +56,22 @@ if mode = 0
 					has_target= false
 				}
 			}
-	}
-	/// firgure out a way to change between modes without breaking anything
-	if target_house != noone
-			{
-				has_target = true
 				target_house.is_targeted = true
 				target_house.is_targeted_by = self
-			}
-		else
-			{
-			has_target = false	
-			}
+				mode = 0
+			
+		
+	}
+	}
+	/// firgure out a way to change between modes without breaking anything
 ///move towards target else find target
 
 
 
 	
-	}
-else if has_target and instance_exists(target_house)
+if mode = 0
+{	
+if has_target and instance_exists(target_house)
 {
 	if (x < target_house.house_x-10)
 	{
@@ -91,27 +89,30 @@ else if has_target and instance_exists(target_house)
 	{
 		vspeed -= 1
 	}
-if (x >= target_house.house_x and x<=target_house.house_x + 10 and y >= target_house.house_y-350 and y < target_house.house_y - 225)
-{
-	on_top = true
-	if can_shoot == true
-	{
-		can_shoot = false
-		alarm[10] = 10
-		enemy_fire(on_top , self)
-	}
-}
-else
-{
-	on_top = false
+	if (x >= target_house.house_x and x<=target_house.house_x + 10 and y >= target_house.house_y-350 and y < target_house.house_y - 225)
+		{
+			on_top = true
+			if can_shoot == true
+			{
+			can_shoot = false
+			alarm[0] = 100
+			enemy_fire(on_top , self)
+			}
+		}
+	else	
+		{
+			on_top = false
+		}
+
+
+	}	
 }
 
 
-}
-}
+
 if mode = 1 // wander mode
 {
-	diret = choose(1,2)
+	diret = irandom_range(1,2)
 	if diret = 1
 	{
 		hspeed = -2
@@ -122,6 +123,10 @@ if mode = 1 // wander mode
 		hspeed = 2
 	
 	}
-	alarm[1] = 10
+
+	if has_target
+	{
+	mode = 0
+	}
 }
 
